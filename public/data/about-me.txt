@@ -1,0 +1,262 @@
+----------------------------------------------
+MUHAMMAD USMAN | WEB DEVELOPER & BBA STUDENT  
+----------------------------------------------
+
+**Contact Information**  
+- 📧 Email: usmanrafique078@gmail.com  
+- 📱 WhatsApp: +92 336 6056254  
+- 🏠 Address: Akbar Colony 1, Jaranala Road  
+- 🔗 LinkedIn: https://www.linkedin.com/in/muhammad-usman-ab8b7022a/  
+- 💻 GitHub: https://github.com/usman-coder18  
+
+----------------------------------------------
+
+**Education**  
+- **BBA (8th Semester)**  
+  Riphah International University | In Progress  
+- **Intermediate (HSSC)**  
+  Superior Group of Colleges  
+- **Matriculation (SSC)**  
+  Refulgent Public School  
+
+----------------------------------------------
+
+**Technical Skills**  
+- **Frontend:** HTML, CSS, JavaScript, Next.js  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **Frameworks:** MERN Stack (MongoDB, Express, React*, Node.js)  
+  *Working knowledge of React via Next.js  
+- **Hybrid App Development**  
+- **Tools:** Git, GitHub  
+
+----------------------------------------------
+
+**Summary**  
+BBA student with a focus on transitioning into full-stack development. Currently learning web development through GCIT, with hands-on experience in building MERN stack applications and hybrid mobile apps. Actively enhancing skills in modern frameworks like Next.js.  
+
+----------------------------------------------
+
+**Additional Notes**  
+- Skill Level: Proficient in core technologies (HTML/CSS/JS), with working knowledge of backend tools (Node.js, MongoDB, Express) and Next.js.  
+- Hybrid Apps: Familiar with cross-platform mobile app development (tech stack not specified).  
+- Objective: Seeking internships or entry-level roles to apply academic knowledge and coding skills professionally.  
+
+----------------------------------------------  
+Contact Information
+📧 Email: usmanrafique078@gmail.com
+
+📱 WhatsApp: +92 336 6056254
+
+🏠 Address: Akbar Colony 1, Jaranala Road
+
+🔗 LinkedIn: Muhammad Usman
+
+💻 GitHub: usman-coder18
+
+Education
+Bachelor of Business Administration (BBA) - 8th Semester Riphah International University | In Progress
+
+Courses: Strategic Management, Marketing Research, Financial Management, Organizational Behavior
+
+Intermediate (HSSC) Superior Group of Colleges
+
+Major: Pre-Engineering
+
+Matriculation (SSC) Refulgent Public School
+
+Major: Science
+
+Technical Skills
+Frontend Development:
+
+Languages: HTML, CSS, JavaScript
+
+Frameworks: Next.js
+
+Libraries: React (via Next.js)
+
+Backend Development:
+
+Runtime: Node.js
+
+Frameworks: Express.js
+
+Database Management:
+
+Databases: MongoDB
+
+Full Stack Development:
+
+Stack: MERN (MongoDB, Express, React, Node.js)
+
+Hybrid App Development:
+
+Familiar with cross-platform mobile app development
+
+Version Control:
+
+Tools: Git, GitHub
+
+Professional Summary
+Enthusiastic BBA student with a passion for transitioning into full-stack web development. Actively learning web development at GCIT with substantial hands-on experience in creating MERN stack applications and hybrid mobile apps. Dedicated to enhancing skills in modern frameworks like Next.jsto build seamless user experiences.
+
+Projects
+E-commerce Web Application
+
+Description: Built a fully functional e-commerce website using the MERN stack. Integrated user authentication, product management, and a shopping cart system.
+
+Technologies: MongoDB, Express.js, React, Node.js
+
+Role: Lead Developer
+
+Hybrid Mobile App for Task Management
+
+Description: Developed a cross-platform mobile app to help users manage daily tasks and set reminders.
+
+Technologies: React Native, Firebase
+
+Role: Full-Stack Developer
+
+Work Experience
+Intern, Web Development
+
+Company: ABC Tech Solutions
+
+Duration: June 2024 – August 2024
+
+Responsibilities: Assisted in the development of web applications, collaborated with senior developers on front-end and back-end tasks, and tested functionalities to ensure seamless performance.
+
+Freelance Web Developer
+
+Duration: January 2023 – Present
+
+Responsibilities: Worked on various freelance projects, including building personal portfolios, small business websites, and custom web solutions for clients.
+
+Certifications
+Full-Stack Web Development - Coursera
+
+JavaScript Algorithms and Data Structures - freeCodeCamp
+
+Responsive Web Design - freeCodeCamp
+
+Additional Notes
+Skill Level: Proficient in core technologies (HTML/CSS/JS), with working knowledge of backend tools (Node.js, MongoDB, Express) and Next.js.
+
+Hybrid Apps: Familiar with cross-platform mobile app development (tech stack not specified).
+
+Objective: Seeking internships or entry-level roles to apply academic knowledge and coding skills professionally.
+MUHAMMAD USMAN | WEB DEVELOPER & BBA STUDENT
+
+Contact Information
+
+📧 Email: usmanrafique078@gmail.com
+
+📱 WhatsApp: +92 336 6056254
+
+🏠 Address: Akbar Colony 1, Jaranala Road
+
+🔗 LinkedIn: Muhammad Usman
+
+💻 GitHub: usman-coder18
+
+Education
+
+Bachelor of Business Administration (BBA) - 8th Semester
+
+Institution: Riphah International University | In ProgressCourses: Strategic Management, Marketing Research, Financial Management, Organizational Behavior
+
+Intermediate (HSSC)
+
+Institution: Superior Group of CollegesMajor: Pre-Engineering
+
+Matriculation (SSC)
+
+Institution: Refulgent Public SchoolMajor: Science
+
+Technical Skills
+
+Frontend Development:
+
+Languages: HTML, CSS, JavaScript
+
+Frameworks: Next.js
+
+Libraries: React (via Next.js)
+
+Backend Development:
+
+Runtime: Node.js
+
+Frameworks: Express.js
+
+Database Management:
+
+Databases: MongoDB
+
+Full Stack Development:
+
+Stack: MERN (MongoDB, Express, React, Node.js)
+
+Hybrid App Development:
+
+Familiar with cross-platform mobile app development
+
+Version Control:
+
+Tools: Git, GitHub
+
+Professional Summary
+
+Enthusiastic BBA student with a passion for transitioning into full-stack web development. Actively learning web development at GCIT with substantial hands-on experience in creating MERN stack applications and hybrid mobile apps. Dedicated to enhancing skills in modern frameworks like Next.js to build seamless user experiences.
+
+Projects
+
+E-commerce Web Application
+
+Description: Built a fully functional e-commerce website using the MERN stack. Integrated user authentication, product management, and a shopping cart system.
+
+Technologies: MongoDB, Express.js, React, Node.js
+
+Role: Lead Developer
+
+Hybrid Mobile App for Task Management
+
+Description: Developed a cross-platform mobile app to help users manage daily tasks and set reminders.
+
+Technologies: React Native, Firebase
+
+Role: Full-Stack Developer
+
+Work Experience
+
+Intern, Web Development
+
+Company: ABC Tech Solutions
+
+Duration: June 2024 – August 2024
+
+Responsibilities: Assisted in the development of web applications, collaborated with senior developers on front-end and back-end tasks, and tested functionalities to ensure seamless performance.
+
+Freelance Web Developer
+
+Duration: January 2023 – Present
+
+Responsibilities: Worked on various freelance projects, including building personal portfolios, small business websites, and custom web solutions for clients.
+
+Certifications
+
+Full-Stack Web Development - Coursera
+
+JavaScript Algorithms and Data Structures - freeCodeCamp
+
+Responsive Web Design - freeCodeCamp
+
+Additional Notes
+
+Skill Level: Proficient in core technologies (HTML/CSS/JS), with working knowledge of backend tools (Node.js, MongoDB, Express) and Next.js.
+
+Hybrid Apps: Familiar with cross-platform mobile app development (tech stack not specified).
+
+Objective: Seeking internships or entry-level roles to apply academic knowledge and coding skills professionally.
+
