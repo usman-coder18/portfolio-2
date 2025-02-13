@@ -11,7 +11,7 @@ const MotionComponent = dynamic(() => import('framer-motion').then(mod => mod.mo
 import {
   FiMail, FiUser, FiMessageSquare, FiSend, FiX, FiGithub, FiLinkedin,
   FiCode, FiServer, FiDatabase, FiSmartphone, FiChevronUp,
-  FiVoicemail, FiMessageCircle, FiTerminal
+  FiVoicemail, FiMessageCircle, FiTerminal,FiDownload
 } from 'react-icons/fi';
 import { FaReact, FaNodeJs, FaPython, FaAws, FaWhatsapp, FaLinode } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb, SiExpress, SiHtml5 } from 'react-icons/si';
@@ -105,7 +105,8 @@ const PortfolioPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Hero Section */}
-      <motion.section
+       {/* Hero Section */}
+       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -113,7 +114,7 @@ const PortfolioPage = () => {
       >
         <h1 className="text-3xl md:text-5xl font-bold mb-4">Muhammad Usman</h1>
         <p className="text-lg md:text-xl text-gray-300 mb-6">MERN Stack Developer</p>
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 mb-4">
           <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/usman-coder18">
             <FiGithub className="text-3xl" />
           </motion.a>
@@ -127,8 +128,17 @@ const PortfolioPage = () => {
             <FaWhatsapp className="text-3xl" />
           </motion.a>
         </div>
+        {/* Download Resume Button */}
+        <motion.a
+          href="/api/resume"
+          download="MuhammadUsmanResume (new).pdf (1).pdf"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 w-fit mx-auto"
+        >
+          <FiDownload className="text-xl" /> Download Resume
+        </motion.a>
       </motion.section>
-
       {/* About Section */}
       <section className="py-10 px-4 md:py-16 md:px-6 bg-gray-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
