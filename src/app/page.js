@@ -198,8 +198,8 @@ const PortfolioPage = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
-              whileHover={{ scale: 1.2, rotate: 5, boxShadow: "0px 0px 20px rgba(0, 153, 255, 0.7)" }}
+              transition={{ delay: index * 0.0, type: "spring", stiffness: 100 }}
+              whileHover={{ scale: 1.0, rotate: 5, boxShadow: "0px 0px 20px rgba(0, 153, 255, 0.7)" }}
               whileTap={{ scale: 0.9 }}
               className="flex flex-col items-center p-6 bg-gray-700 rounded-xl shadow-lg cursor-pointer transition-transform"
             >
@@ -216,65 +216,75 @@ const PortfolioPage = () => {
 
       {/* Project Section */}
       <section className="py-10 px-4 md:py-16 md:px-6 bg-gray-800">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, type: "spring", stiffness: 100 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, rotate: 1 }}
-              className="bg-gray-700 rounded-lg overflow-hidden shadow-xl cursor-pointer transition-transform"
-            >
-              <motion.img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-32 md:h-48 object-cover"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              />
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-2">
-                  {project.hrefs && project.hrefs.length > 0 ? (
-                    project.hrefs.map((link, linkIndex) => (
-                      <motion.a
-                        key={linkIndex}
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.1, boxShadow: "0px 0px 10px rgba(0, 153, 255, 0.7)" }}
-                        transition={{ duration: 0.1 }}
-                        className="bg-blue-500 hover:bg-blue-600 text-white py-1 px-3 rounded text-sm"
-                      >
-                        Visit {linkIndex + 1}
-                      </motion.a>
-                    ))
-                  ) : (
-                    <span className="text-gray-400 text-sm">No link available</span>
-                  )}
-                </div>
+  <h2 className="text-3xl font-bold text-center mb-12 text-white">Projects</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    {projects.map((project, index) => (
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: index * 0.15,
+          type: "spring",
+          stiffness: 80,
+          damping: 12,
+        }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.03, rotate: 0.5 }}
+        className="bg-gray-700 rounded-lg overflow-hidden shadow-xl cursor-pointer transition-transform"
+      >
+       <motion.img
+  src={project.image}
+  alt={project.title}
+  className="w-full h-32 md:h-48 object-cover"
+  whileHover={{ scale: 1.02 }}
+  transition={{ duration: 0.1, ease: "easeOut" }} 
+/>
 
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+        <div className="p-6">
+          <div className="flex flex-wrap gap-2 mb-2">
+            {project.hrefs && project.hrefs.length > 0 ? (
+              project.hrefs.map((link, linkIndex) => (
+                <motion.a
+                  key={linkIndex}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, boxShadow: "0px 0px 12px rgba(0, 153, 255, 0.8)" }}
+                  transition={{ duration: 0.2, ease: "easeInOut" }}
+                  className="bg-blue-500 hover:bg-blue-600 text-white py-1 px-3 rounded text-sm"
+                >
+                  Visit {linkIndex + 1}
+                </motion.a>
+              ))
+            ) : (
+              <span className="text-gray-400 text-sm">No link available</span>
+            )}
+          </div>
 
-                <div className="flex gap-3">
-                  {project.tech.map((Icon, techIndex) => (
-                    <motion.div
-                      key={techIndex}
-                      animate={{ y: [0, -5, 0] }}
-                      transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                    >
-                      <Icon className="text-2xl text-blue-400" />
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          ))}
+          <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+          <p className="text-gray-300 mb-4">{project.description}</p>
+
+          <div className="flex gap-3">
+            {project.tech.map((Icon, techIndex) => (
+              <motion.div
+                key={techIndex}
+                animate={{ y: [0, -3, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 1.8,
+                  ease: "easeInOut",
+                }}
+              >
+                <Icon className="text-2xl text-blue-400" />
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </section>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       {/* Contact Form */}
       <section className="py-10 px-4 md:py-16 md:px-6 max-w-2xl mx-auto">
