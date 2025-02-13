@@ -124,7 +124,7 @@ const PortfolioPage = () => {
           <motion.a whileHover={{ scale: 1.1 }} href="mailto:usmanrafique078@gmail.com">
             <FiMail className="text-3xl" />
           </motion.a>
-          <motion.a whileHover={{ scale: 1.1 }} href="https://wa.me/0336605624">
+          <motion.a whileHover={{ scale: 1.1 }} href="https://wa.me/+92336605624">
             <FaWhatsapp className="text-3xl" />
           </motion.a>
         </div>
