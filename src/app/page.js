@@ -42,8 +42,8 @@ const projects = [
     title: "Bag Shop",
     description: "A modern e-commerce platform for stylish and durable bags, offering a seamless shopping experience with secure checkout.",
     tech: [FaReact, SiMongodb, SiExpress],
-    image: "/Screenshot 2025-02-10 235124.png",
-    hrefs: [""]
+    image: "/Screenshot 2025-02-13 040525.png",
+    hrefs: ["http://scatch-production.up.railway.app/"]
   },
   {
     title: "Quick Thoughts",
