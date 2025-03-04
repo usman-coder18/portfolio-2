@@ -2,7 +2,6 @@ import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { Pinecone } from "@pinecone-database/pinecone";
 import { PineconeStore } from "@langchain/pinecone";
-// import { scrapeGitHubProfile } from "@/utils/githubScraper";
 import { readTextFile } from "@/utils/fileLoader";
 import path from "path";
 import { NextResponse } from "next/server";
@@ -22,7 +21,6 @@ export async function POST() {
     });
 
     const [ textData] = await Promise.all([
-      // scrapeGitHubProfile("MubeenAmjad205"),
       readTextFile(path.join(process.cwd(), "public/data/about-me.txt")),
     ]);
 

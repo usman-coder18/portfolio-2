@@ -1,10 +1,10 @@
-'use client'; // Ensure this is a Client Component
+'use client'; 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import dynamic from 'next/dynamic';
-
+import { Typewriter } from 'react-simple-typewriter';
 const MotionComponent = dynamic(() => import('framer-motion').then(mod => mod.motion.div), {
   ssr: false,
 });
@@ -16,7 +16,6 @@ import {
 import { FaReact, FaNodeJs, FaPython, FaAws, FaWhatsapp, FaLinode } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb, SiExpress, SiHtml5 } from 'react-icons/si';
 
-// Projects data
 const projects = [
   {
     title: "Number Guess Game",
@@ -77,7 +76,7 @@ const PortfolioPage = () => {
   const sendMessage = async () => {
     if (!inputMessage.trim()) return;
 
-    // Add user message immediately
+   
     setMessages(prev => [...prev, { text: inputMessage, isBot: false }]);
     setInputMessage('');
     setLoading(true);
@@ -85,7 +84,6 @@ const PortfolioPage = () => {
     try {
       const response = await axios.post('/api/chat2', { message: inputMessage });
 
-      // If response exists, add bot message
       if (response?.data?.response) {
         setMessages(prev => [...prev, { text: response.data.response, isBot: true }]);
       } else {
@@ -104,15 +102,23 @@ const PortfolioPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      {/* Hero Section */}
-       {/* Hero Section */}
        <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="py-20 px-6 text-center"
       >
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">Muhammad Usman</h1>
+     
+        <h1 className="text-2xl md:text-5xl font-bold mb-4">
+        <Typewriter 
+      words={['Muhammad Usman']}
+      loop={false}
+      cursor
+      cursorStyle="|"
+      typeSpeed={100}
+      deleteSpeed={50}
+    />
+        </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-6">MERN Stack Developer</p>
         <div className="flex justify-center gap-4 mb-4">
           <motion.a whileHover={{ scale: 1.1 }} href="https://github.com/usman-coder18">
@@ -128,10 +134,9 @@ const PortfolioPage = () => {
             <FaWhatsapp className="text-3xl" />
           </motion.a>
         </div>
-        {/* Download Resume Button */}
         <motion.a
           href="/api/resume"
-          download="MuhammadUsmanResume (new).pdf (1).pdf"
+          download="Muhammad usman mern stack resume.pdf"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 w-fit mx-auto"
@@ -139,7 +144,6 @@ const PortfolioPage = () => {
           <FiDownload className="text-xl" /> Download Resume
         </motion.a>
       </motion.section>
-      {/* About Section */}
       <section className="py-10 px-4 md:py-16 md:px-6 bg-gray-800">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -189,7 +193,6 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
       <section className="py-10 px-4 md:py-16 md:px-6 bg-gray-800">
         <h2 className="text-3xl font-bold text-center mb-12 text-white">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
@@ -214,7 +217,6 @@ const PortfolioPage = () => {
         </div>
       </section>
 
-      {/* Project Section */}
       <section className="py-10 px-4 md:py-16 md:px-6 bg-gray-800">
   <h2 className="text-3xl font-bold text-center mb-12 text-white">Projects</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -254,7 +256,7 @@ const PortfolioPage = () => {
                   transition={{ duration: 0.2, ease: "easeInOut" }}
                   className="bg-blue-500 hover:bg-blue-600 text-white py-1 px-3 rounded text-sm"
                 >
-                  Visit {linkIndex + 1}
+                  Visit 
                 </motion.a>
               ))
             ) : (
@@ -286,7 +288,6 @@ const PortfolioPage = () => {
   </div>
 </section>
 
-      {/* Contact Form */}
       <section className="py-10 px-4 md:py-16 md:px-6 max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -334,7 +335,6 @@ const PortfolioPage = () => {
         </form>
       </section>
 
-      {/* Chat Bot */}
       <div className="fixed bottom-6 right-6">
         <motion.button
           whileHover={{ scale: 1.1 }}
@@ -353,13 +353,11 @@ const PortfolioPage = () => {
               exit={{ scale: 0, opacity: 0 }}
               className="absolute bottom-20 right-0 w-80 bg-gray-800 rounded-lg shadow-xl h-96 flex flex-col"
             >
-              {/* Chat Header */}
               <div className="p-4 bg-gray-700 flex justify-between items-center">
                 <h3 className="text-lg font-bold">Chatbot</h3>
                 <FiX className="cursor-pointer" onClick={() => setIsChatOpen(false)} />
               </div>
 
-              {/* Chat Messages */}
               <div className="flex-1 overflow-y-auto p-4 space-y-3">
                 {messages.map((msg, index) => (
                   <div
@@ -375,7 +373,6 @@ const PortfolioPage = () => {
                 <div ref={chatEndRef}></div>
               </div>
 
-              {/* Chat Input */}
               <div className="p-3 bg-gray-700 flex">
                 <input
                   type="text"
