@@ -52,6 +52,13 @@ const projects = [
     image: "/Screenshot 2025-02-10 233726.png",
     hrefs: ["https://quickthoughts-production.up.railway.app/"]
   },
+  {
+    title: "Car-Hub",
+    description: "A Next.js 15 car catalog app that fetches and filters cars from an API, using TypeScript, Tailwind CSS, and server components. ",
+    tech: [SiNextdotjs,SiTypescript,SiTailwindcss],
+    image: "/Screenshot 2025-03-09 175117.png",
+    hrefs: ["https://car-hub-five-ecru.vercel.app/"]
+  },
 ];
 
 const PortfolioPage = () => {
