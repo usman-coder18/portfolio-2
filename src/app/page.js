@@ -14,7 +14,7 @@ import {
   FiVoicemail, FiMessageCircle, FiTerminal,FiDownload
 } from 'react-icons/fi';
 import { FaReact, FaNodeJs, FaPython, FaAws, FaWhatsapp, FaLinode } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb, SiExpress, SiHtml5 } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb, SiExpress, SiHtml5,SiSocketdotio } from 'react-icons/si';
 
 const projects = [
   {
@@ -27,16 +27,16 @@ const projects = [
   {
     title: "Todo List",
     description: "A to-do list is a simple tool to organize tasks by adding, editing, prioritizing, and marking them as complete",
-    tech: [FaReact],
+    tech: [SiNextdotjs],
     image: "Screenshot 2025-01-14 174543.png",
     hrefs: ["https://todo-list-phi-indol-53.vercel.app/"]
   },
   {
-    title: "Password Generator",
-    description: "A tool that generates strong, customizable passwords",
-    tech: [FaReact],
-    image: "/Screenshot 2025-02-10 235846.png",
-    hrefs: ["https://password-generator-six-peach.vercel.app/"]
+    title: "Chatter",
+    description: "A real-time chat application built with MERN stack and Socket.io",
+    tech: [FaReact ,SiSocketdotio ,SiMongodb , SiExpress],
+    image: "/Screenshot 2025-03-12 201620.png",
+    hrefs: ["https://chat-app-p.up.railway.app/"]
   },
   {
     title: "Bag Shop",
