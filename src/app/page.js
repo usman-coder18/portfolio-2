@@ -143,7 +143,7 @@ const PortfolioPage = () => {
         </div>
         <motion.a
           href="/api/resume"
-          download="Muhammad usman mern stack resume.pdf"
+          download="usman-resume.pdf"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 w-fit mx-auto"

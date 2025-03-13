@@ -4,14 +4,14 @@ import { promises as fs } from "fs";
 
 export async function GET() {
     try {
-        const filePath = path.join(process.cwd(), "public", "Muhammad usman mern stack resume.pdf");
+        const filePath = path.join(process.cwd(), "public", "usman-resume.pdf");
 
         const fileBuffer = await fs.readFile(filePath);
 
         return new NextResponse(fileBuffer, {
             headers: {
                 "Content-Type": "application/pdf",
-                "Content-Disposition": "inline; filename=Muhammad usman mern stack resume.pdf",
+                "Content-Disposition": "inline; filename=usman-resume.pdf",
             },
         });
     } catch (error) {
