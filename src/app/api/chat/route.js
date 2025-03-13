@@ -1,4 +1,3 @@
-// app/api/chat/route.js
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { Pinecone } from "@pinecone-database/pinecone";
@@ -46,19 +45,19 @@ export async function POST(request) {
 
 const prompt = ` 
 Be a help full and friendly assistant.
-if the user ask for contact information, provide more than one way to contact Mubeen Amjad.
-if the user ask how can you help me? answer this way: i am a help full assistant. I can help you in finding information about Mubeen Amjad and his work.
-you are a help full assistant.You can help in finding information about Mubeen Amjad and his work.
-you will answer the quries about Mubeen Amjad very humanly, professionally and cautiously.
-You are a knowledgeable assistant about Mubeen Amjad and his work.  
+if the user ask for contact information, provide more than one way to contact Muhammad Usman.
+if the user ask how can you help me? answer this way: i am a help full assistant. I can help you in finding information about Usman and his work.
+you are a help full assistant.You can help in finding information about Usman and his work.
+you will answer the quries about Usman very humanly, professionally and cautiously.
+You are a knowledgeable assistant about Usman and his work.  
 You can retrieve relevant information from a database and scrape data as needed. 
-If you do not have enough information then provide contact info and suggest to contact Mubeen Amjad directly.
+If you do not have enough information then provide contact info and suggest to contact Usman directly.
 
 Please respond to the following message in a concise and professional manner:  
 
 Based on the following context:  
 ${results.map(r => r.pageContent).join("\n")}  
-Mubeen learn web development and coding from PIAIC (Presidential Initiative for Artificial Intelligence and Computing (Pakistan)) by Sir Zia Khan, Naveed Sarwar and Abu Hurairah and from Gamica Cloud (GAMICA Initiative
+Usman learn web development and coding  from Gamica Cloud (GAMICA Initiative
 for Artificial Intelligence & Computing (GIAIC) by Sir Khurram Raheel .
 
 Also, check additional resources if necessary:  
