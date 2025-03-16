@@ -15,6 +15,7 @@ import {
 } from 'react-icons/fi';
 import { FaReact, FaNodeJs, FaPython, FaAws, FaWhatsapp, FaLinode } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMongodb, SiExpress, SiHtml5,SiSocketdotio } from 'react-icons/si';
+import Contact from './contact';
 
 const projects = [
   {
@@ -70,16 +71,18 @@ const PortfolioPage = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   const skills = [FaReact, SiNextdotjs, FaNodeJs, SiTailwindcss, SiTypescript, SiMongodb, SiExpress, SiHtml5];
-
-  const onSubmit = async (data) => {
-    try {
-      await axios.post('/api/contact', data);
-      alert('Message sent successfully!');
-    } catch (error) {
-      alert('Error sending message');
-    }
-  };
-
+  // const [chatmessages, setChatMessages] = useState([
+  //   { text: "How can I help you?", isBot: true }
+  // ]);
+  // const onSubmit = async (data) => {
+  //   try {
+  //     await axios.post('/api/contact', data);
+  //     alert('Message sent successfully!');
+  //   } catch (error) {
+  //     alert('Error sending message');
+  //   }
+  // };
+ 
   const sendMessage = async () => {
     if (!inputMessage.trim()) return;
 
@@ -107,6 +110,7 @@ const PortfolioPage = () => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
        <motion.section
@@ -297,7 +301,7 @@ const PortfolioPage = () => {
 
       <section className="py-10 px-4 md:py-16 md:px-6 max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        {/* <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
             <label className="block mb-2">Name</label>
             <div className="flex items-center bg-gray-700 rounded-lg p-3">
@@ -339,7 +343,8 @@ const PortfolioPage = () => {
           >
             <FiSend className="mr-2" /> Send Message
           </motion.button>
-        </form>
+        </form> */}
+        <Contact/>
       </section>
 
       <div className="fixed bottom-6 right-6">
@@ -366,19 +371,19 @@ const PortfolioPage = () => {
               </div>
 
               <div className="flex-1 overflow-y-auto p-4 space-y-3">
-                {messages.map((msg, index) => (
-                  <div
-                    key={index}
-                    className={`p-3 rounded-lg max-w-xs ${
-                      msg.isBot ? 'bg-blue-500 self-start' : 'bg-gray-600 self-end'
-                    }`}
-                  >
-                    {msg.text}
-                  </div>
-                ))}
-                {loading && <div className="text-gray-400">Bot is typing...</div>}
-                <div ref={chatEndRef}></div>
-              </div>
+  {messages.map((msg, index) => (
+    <div
+      key={index}
+      className={`p-3 rounded-lg max-w-xs ${
+        msg.isBot ? 'bg-blue-500 self-start' : 'bg-gray-600 self-end'
+      }`}
+    >
+      {msg.text}
+    </div>
+  ))}
+  {loading && <div className="text-gray-400">Bot is typing...</div>}
+  <div ref={chatEndRef}></div>
+</div>
 
               <div className="p-3 bg-gray-700 flex">
                 <input
